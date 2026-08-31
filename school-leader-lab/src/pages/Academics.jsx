@@ -4,24 +4,24 @@ import { BookOpen, Monitor, Users, BarChart3, Globe, Clock, CheckCircle } from '
 
 const programs = [
   {
-    title: 'Certification Leadership Pédagogique Avancé', level: 'Niveau avancé', duration: '6 mois', format: 'Hybride',
-    description: 'Programme phare de School Leader Lab conçu pour les directeurs d\'école et chefs d\'établissement en poste. Couvre la gouvernance stratégique, l\'innovation pédagogique, la gestion des ressources humaines et le pilotage par la donnée.',
-    modules: ['Gouvernance et éthique du leadership éducatif', 'Innovation pédagogique et transformation numérique', 'Gestion budgétaire et ressources humaines', 'Communication institutionnelle et relations extérieures', 'Évaluation et amélioration continue des programmes'],
+    title: 'Certification Arts du Cirque & Performance Avancée', level: 'Niveau avancé', duration: '6 mois', format: 'Hybride',
+    description: 'Programme phare de 3 Rings School Of Circus Arts conçu pour les artistes professionnels, entraîneurs et directeurs de troupes. Couvre la rigueur technique, la sécurité des équipements aériens, la mise en scène et la gestion de projets artistiques.',
+    modules: ['Gouvernance et sécurité des disciplines aériennes et acrobatiques', 'Innovation artistique et mise en scène contemporaine', 'Gestion budgétaire et production de spectacles', 'Communication institutionnelle et relations avec les salles de spectacles', 'Évaluation et perfectionnement technique continu'],
   },
   {
-    title: 'Google Workspace for Education — Administration', level: 'Niveau intermédiaire', duration: '3 mois', format: 'En ligne',
-    description: 'Formation complète à l\'administration de Google Workspace for Education. Gestion des licences, sécurité des données scolaires, déploiement à l\'échelle d\'un district, et conformité FERPA.',
-    modules: ['Architecture et configuration de Google Workspace', 'Gestion des utilisateurs, groupes et unités organisationnelles', 'Sécurité des données et conformité FERPA/COPPA', 'Google Classroom : déploiement et adoption', 'Support technique et gestion des incidents'],
+    title: 'Gestion Numérique & Outils de Production Scénique', level: 'Niveau intermédiaire', duration: '3 mois', format: 'En ligne',
+    description: 'Formation complète à l\'administration des outils numériques et collaboratifs pour les compagnies de cirque. Gestion des plannings, sécurité des données des artistes, déploiement logistique et conformité des tournées.',
+    modules: ['Architecture et configuration des espaces de travail numériques', 'Gestion des utilisateurs, plannings et troupes', 'Sécurité des données et conformité des contrats', 'Collaboration et diffusion : outils de gestion de tournée', 'Support technique et gestion logistique des spectacles'],
   },
   {
-    title: 'Gestion de Crise et Communication Institutionnelle', level: 'Niveau avancé', duration: '2 mois', format: 'Présentiel intensif',
-    description: 'Ateliers pratiques préparant les leaders scolaires à gérer les situations de crise (violence, catastrophes naturelles, scandales médiatiques) tout en maintenant la confiance des communautés éducatives.',
-    modules: ['Protocoles de gestion de crise en milieu scolaire', 'Communication avec les médias et les autorités', 'Soutien psychologique aux équipes et aux élèves', 'Analyse de cas réels et simulations', 'Post-crise : évaluation et reconstruction'],
+    title: 'Sécurité Scénique et Gestion des Risques', level: 'Niveau avancé', duration: '2 mois', format: 'Présentiel intensif',
+    description: 'Ateliers pratiques préparant les artistes et régisseurs à gérer les situations d\'urgence et les risques liés aux performances aériennes et acrobatiques tout en maintenant la sécurité des équipes et du public.',
+    modules: ['Protocoles de sécurité et vérification du matériel d\'accroche', 'Communication d\'urgence avec les équipes techniques et les secours', 'Soutien psychologique et préparation mentale des artistes', 'Analyse de cas réels et simulations de spectacle', 'Gestion post-incident : inspection et reprise des représentations'],
   },
   {
-    title: 'Data-Driven Decision Making for School Leaders', level: 'Niveau intermédiaire', duration: '4 mois', format: 'Hybride',
-    description: 'Maîtrise des outils d\'analyse de données éducatives pour piloter la réussite scolaire, identifier les écarts de performance et satisfaire aux exigences de rendement des autorités fédérales et des districts.',
-    modules: ['Collecte et structuration des données éducatives', 'Tableaux de bord et indicateurs de performance (KPIs)', 'Analyse prédictive et détection précoce des décrochages', 'Rapports aux conseils scolaires et aux autorités de tutelle', 'Éthique des données et protection de la vie privée des élèves'],
+    title: 'Data-Driven Tour Management pour Compagnies', level: 'Niveau intermédiaire', duration: '4 mois', format: 'Hybride',
+    description: 'Maîtrise des outils d\'analyse pour optimiser les tournées, suivre la rentabilité des spectacles, identifier les tendances du public et satisfaire aux exigences des partenaires institutionnels.',
+    modules: ['Collecte et structuration des données de billetterie et de tournée', 'Tableaux de bord et indicateurs de performance artistique (KPIs)', 'Analyse prédictive de l\'affluence et gestion des réservations', 'Rapports aux producteurs, conseils d\'administration et tutelles', 'Éthique des données et protection de la vie privée du public'],
   },
 ]
 
@@ -29,18 +29,18 @@ function Academics() {
   return (
     <>
       <Helmet>
-        <title>Programmes de formation — School Leader Lab</title>
-        <meta name="description" content="Découvrez les programmes certifiants de School Leader Lab : leadership pédagogique, Google Workspace for Education, gestion de crise. EIN 82-1581985. Washington, DC." />
+        <title>Programmes de formation — 3 Rings School Of Circus Arts</title>
+        <meta name="description" content="Découvrez les programmes certifiants de 3 Rings School Of Circus Arts : arts du cirque, formation acrobatique, gestion de production. EIN 47-4079081. Seattle, WA." />
       </Helmet>
       <div className="bg-primary-900 text-white py-16">
         <div className="container-main px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Nos programmes de formation</h1>
-          <p className="text-primary-100 text-lg max-w-2xl mx-auto">Des parcours certifiants conçus par et pour les leaders éducatifs, ancrés dans la réalité du terrain américain.</p>
+          <p className="text-primary-100 text-lg max-w-2xl mx-auto">Des parcours certifiants conçus par et pour les professionnels des arts du cirque, ancrés dans la rigueur de la scène américaine.</p>
         </div>
       </div>
       <section className="section-padding bg-white">
         <div className="container-main">
-          <SectionHeader title="Catalogue des formations" subtitle="School Leader Lab propose quatre programmes certifiants, chacun conçu pour répondre à des besoins spécifiques du leadership scolaire contemporain." />
+          <SectionHeader title="Catalogue des formations" subtitle="3 Rings School Of Circus Arts propose quatre programmes certifiants, chacun conçu pour répondre aux exigences du monde du cirque contemporain." />
           <div className="space-y-8">
             {programs.map((p, i) => (
               <div key={i} className="bg-white rounded-2xl border border-slate-200 overflow-hidden">
@@ -68,17 +68,17 @@ function Academics() {
               <div className="text-center">
                 <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><Users className="w-6 h-6 text-primary-700" /></div>
                 <h3 className="font-semibold text-slate-900 mb-2">Apprentissage collaboratif</h3>
-                <p className="text-sm text-slate-600">Cohorts de 15 à 20 participants favorisant les échanges entre pairs et le partage de pratiques entre États.</p>
+                <p className="text-sm text-slate-600">Cohorts de 15 à 20 artistes favorisant le partage d'expériences scéniques et de techniques entre professionnels.</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><BarChart3 className="w-6 h-6 text-primary-700" /></div>
                 <h3 className="font-semibold text-slate-900 mb-2">Approche par compétences</h3>
-                <p className="text-sm text-slate-600">Chaque module vise des compétences mesurables et directement applicables dans le contexte professionnel du participant.</p>
+                <p className="text-sm text-slate-600">Chaque module vise des compétences mesurables et directement applicables sur scène et en tournée.</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4"><Globe className="w-6 h-6 text-primary-700" /></div>
                 <h3 className="font-semibold text-slate-900 mb-2">Outils numériques intégrés</h3>
-                <p className="text-sm text-slate-600">Utilisation systématique de Google Workspace for Education, des tableaux de bord analytics et des plateformes de e-learning sécurisées.</p>
+                <p className="text-sm text-slate-600">Utilisation systématique d'outils de gestion de tournée, de tableaux de bord de production et de plateformes d'entraînement sécurisées.</p>
               </div>
             </div>
           </div>

@@ -16,7 +16,7 @@ function Newsletter() {
         <div className="max-w-2xl mx-auto text-center">
           <Mail className="w-10 h-10 text-primary-600 mx-auto mb-4" />
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">Restez informé de nos programmes</h2>
-          <p className="text-slate-600 mb-8">Recevez nos actualités, nouvelles sessions de formation et ressources pour leaders éducatifs.</p>
+          <p className="text-slate-600 mb-8">Recevez nos actualités, nouvelles sessions de formation et ressources pour artistes et professionnels du cirque.</p>
           {submitted ? (
             <div className="flex items-center justify-center gap-2 text-green-600 font-medium">
               <CheckCircle className="w-5 h-5" />Merci ! Vous recevrez nos prochaines actualités à cette adresse.
@@ -29,7 +29,7 @@ function Newsletter() {
             </form>
           )}
           <p className="text-xs text-slate-400 mt-4">
-            School Leader Lab — EIN 82-1581985 — PO Box 53232, Washington, DC 20009. Conforme au RGPD. Désinscription possible à tout moment via <a href="mailto:admin@schoolleaderlab.sbs" className="underline">admin@schoolleaderlab.sbs</a>.
+            3 Rings School Of Circus Arts — EIN 47-4079081 — 3256 39th Ave Sw, Seattle, WA 98116-3414. Conforme au RGPD. Désinscription possible à tout moment via <a href="mailto:admin@3ringsschoolofcircusarts.sbs" className="underline">admin@3ringsschoolofcircusarts.sbs</a>.
           </p>
         </div>
       </div>

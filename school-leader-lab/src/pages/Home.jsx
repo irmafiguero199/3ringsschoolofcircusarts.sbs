@@ -6,37 +6,37 @@ import Newsletter from '../components/Newsletter.jsx'
 import { BookOpen, Users, Calendar, Award, ArrowRight, Shield, MapPin } from 'lucide-react'
 
 const programs = [
-  { icon: BookOpen, title: 'Leadership pédagogique avancé', desc: 'Certification pour directeurs d\'école souhaitant transformer leur établissement par l\'innovation pédagogique et la gouvernance numérique.', image: '/images/leadership-meeting.png' },
-  { icon: Users, title: 'Google Workspace for Education', desc: 'Formation complète à l\'administration de Google Workspace, gestion des licences éducatives et déploiement sécurisé au sein des districts scolaires.', image: '/images/classroom-tech.png' },
-  { icon: Award, title: 'Gestion de crise & communication', desc: 'Ateliers pratiques sur la gestion de crise, la communication institutionnelle et les relations avec les autorités de tutelle.', image: '/images/workshop-conference.png' },
-  { icon: Calendar, title: 'Data-driven decision making', desc: 'Utilisation des données éducatives pour piloter la réussite scolaire, évaluer les programmes et satisfaire aux exigences fédérales.', image: '/images/classroom-lab.png' },
+  { icon: BookOpen, title: 'Arts du cirque & performance', desc: 'Certification pour artistes professionnels et entraîneurs souhaitant perfectionner leurs techniques acrobatiques, aériennes et la mise en scène.', image: '/images/leadership-meeting.png' },
+  { icon: Users, title: 'Gestion numérique & production', desc: 'Formation complète à l\'administration des plateformes numériques, gestion des plannings de tournée et déploiement d\'outils de gestion pour compagnies.', image: '/images/classroom-tech.png' },
+  { icon: Award, title: 'Sécurité scénique & gestion des risques', desc: 'Ateliers pratiques sur la sécurité des équipements aériens, la gestion des risques sous chapiteau et les normes de conformité réglementaire.', image: '/images/workshop-conference.png' },
+  { icon: Calendar, title: 'Data-driven tour management', desc: 'Utilisation des données de billetterie et de public pour optimiser les tournées, évaluer la rentabilité des spectacles et satisfaire aux subventions.', image: '/images/classroom-lab.png' },
 ]
 
 const features = [
-  { title: 'Agrément fédéral confirmé', desc: 'Organisation enregistrée auprès des autorités fédérales américaines avec l\'EIN 82-1581985. Statut 501(c)(3) à but non lucratif.' },
-  { title: 'Formations certifiantes', desc: 'Nos programmes délivrent des certifications reconnues par les districts scolaires et les autorités de tutelle à travers les États-Unis.' },
-  { title: 'Réseau national', desc: 'Plus de 1 200 leaders éducatifs formés dans 48 États. Un réseau actif de professionnels engagés dans la transformation scolaire.' },
+  { title: 'Agrément fédéral confirmé', desc: 'Organisation enregistrée auprès des autorités fédérales américaines avec l\'EIN 47-4079081. Statut 501(c)(3) à but non lucratif.' },
+  { title: 'Formations certifiantes', desc: 'Nos programmes délivrent des certifications reconnues par les compagnies de cirque, les écoles spécialisées et les fédérations à travers les États-Unis.' },
+  { title: 'Réseau national', desc: 'Plus de 1 200 artistes et professionnels formés à travers les États-Unis. Un réseau actif de passionnés engagés dans le renouveau des arts circassiens.' },
 ]
 
 function Home() {
   return (
     <>
       <Helmet>
-        <title>School Leader Lab — Développement Professionnel des Leaders Éducatifs</title>
-        <meta name="description" content="School Leader Lab, institution américaine accréditée (EIN 82-1581985). Formation des leaders éducatifs, certification Google for Education, développement professionnel. PO Box 53232, Washington, DC 20009." />
+        <title>3 Rings School Of Circus Arts — Excellence & Formation aux Arts du Cirque</title>
+        <meta name="description" content="3 Rings School Of Circus Arts, institution américaine accréditée (EIN 47-4079081). Formation professionnelle aux arts du cirque, sécurité scénique, gestion de tournée. 3256 39th Ave Sw, Seattle, WA 98116-3414." />
       </Helmet>
       <Hero />
       <div className="bg-amber-50 border-y border-amber-200">
         <div className="container-main px-4 py-3 text-center text-sm text-amber-800">
           <Shield className="w-4 h-4 inline-block mr-1 mb-0.5" />
-          <strong>Informations institutionnelles :</strong> School Leader Lab — EIN 82-1581985 — Organisation 501(c)(3) —
-          <MapPin className="w-3 h-3 inline-block mx-1" />PO Box 53232, Washington, DC 20009 —
-          <a href="mailto:admin@schoolleaderlab.sbs" className="underline ml-1">admin@schoolleaderlab.sbs</a>
+          <strong>Informations institutionnelles :</strong> 3 Rings School Of Circus Arts — EIN 47-4079081 — Organisation 501(c)(3) —
+          <MapPin className="w-3 h-3 inline-block mx-1" />3256 39th Ave Sw, Seattle, WA 98116-3414 —
+          <a href="mailto:admin@3ringsschoolofcircusarts.sbs" className="underline ml-1">admin@3ringsschoolofcircusarts.sbs</a>
         </div>
       </div>
       <section className="section-padding bg-white">
         <div className="container-main">
-          <SectionHeader title="Nos programmes de formation" subtitle="Des parcours certifiants conçus pour les directeurs d\'école, chefs d\'établissement et responsables pédagogiques souhaitant exceller dans leur mission." />
+          <SectionHeader title="Nos programmes de formation" subtitle="Des parcours certifiants conçus pour les artistes, entraîneurs, régisseurs et directeurs de compagnie souhaitant exceller dans les arts du cirque." />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {programs.map((p, i) => (
               <div key={i} className="group p-6 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all bg-white">
@@ -58,7 +58,7 @@ function Home() {
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Pourquoi choisir School Leader Lab ?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Pourquoi choisir 3 Rings School Of Circus Arts ?</h2>
               <div className="space-y-6">
                 {features.map((f, i) => (
                   <div key={i} className="flex gap-4">
@@ -76,7 +76,7 @@ function Home() {
             </div>
             <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                <img src="/images/campus-classic.png" alt="Campus School Leader Lab" className="w-full h-64 object-cover" />
+                <img src="/images/campus-classic.png" alt="Campus 3 Rings School Of Circus Arts" className="w-full h-64 object-cover" />
               </div>
               <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
                 <div className="text-center mb-6">
@@ -91,7 +91,7 @@ function Home() {
                     </div>
                   ))}
                 </div>
-                <p className="text-xs text-slate-400 mt-6 text-center">Données 2025-2026 — School Leader Lab (EIN 82-1581985)</p>
+                <p className="text-xs text-slate-400 mt-6 text-center">Données 2025-2026 — 3 Rings School Of Circus Arts (EIN 47-4079081)</p>
               </div>
             </div>
           </div>
@@ -101,12 +101,12 @@ function Home() {
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm order-2 lg:order-1">
-              <img src="/images/graduation-group.png" alt="Promotion certifiée School Leader Lab" className="w-full h-80 object-cover" />
+              <img src="/images/graduation-group.png" alt="Promotion certifiée 3 Rings School Of Circus Arts" className="w-full h-80 object-cover" />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Rejoignez notre réseau d\'alumni</h2>
-              <p className="text-slate-600 leading-relaxed mb-6">Plus de 1 200 leaders éducatifs formés dans 48 États américains. Notre communauté alumni est un réseau actif de professionnels qui partagent leurs expériences, leurs défis et leurs succès au quotidien.</p>
-              <p className="text-slate-600 leading-relaxed mb-8">Chaque année, nous organisons la Conférence Annuelle SLL à Washington, DC, où nos alumni se réunissent pour échanger, se former et célébrer leurs réalisations.</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Rejoignez notre réseau d'alumni</h2>
+              <p className="text-slate-600 leading-relaxed mb-6">Plus de 1 200 artistes et professionnels formés à travers les États-Unis. Notre communauté alumni est un réseau actif de professionnels qui partagent leurs expériences, leurs défis techniques et leurs tournées au quotidien.</p>
+              <p className="text-slate-600 leading-relaxed mb-8">Chaque année, nous organisons le rassemblement national 3 Rings à Seattle, WA, où nos alumni se réunissent pour échanger, s'entraîner et célébrer leurs spectacles.</p>
               <Link to="/student-life" className="btn-primary">Découvrir la vie communautaire<ArrowRight className="w-4 h-4 ml-2" /></Link>
             </div>
           </div>
@@ -114,13 +114,13 @@ function Home() {
       </section>
       <section className="section-padding bg-primary-900 text-white">
         <div className="container-main text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Prêt à transformer votre leadership éducatif ?</h2>
-          <p className="text-primary-100 text-lg max-w-2xl mx-auto mb-8">Rejoignez plus de 1 200 leaders éducatifs formés par School Leader Lab. Notre prochaine session débute bientôt.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Prêt à perfectionner votre art et votre carrière ?</h2>
+          <p className="text-primary-100 text-lg max-w-2xl mx-auto mb-8">Rejoignez plus de 1 200 artistes formés par 3 Rings School Of Circus Arts. Notre prochaine session débute bientôt.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/admissions" className="btn-primary bg-white text-primary-900 hover:bg-primary-50">Commencer ma candidature</Link>
             <Link to="/contact" className="btn-secondary bg-white/10 text-white border border-white/20 hover:bg-white/20">Contacter le secrétariat</Link>
           </div>
-          <p className="text-xs text-primary-300 mt-6">School Leader Lab — EIN 82-1581985 — PO Box 53232, Washington, DC 20009 — <a href="mailto:admin@schoolleaderlab.sbs" className="underline ml-1">admin@schoolleaderlab.sbs</a></p>
+          <p className="text-xs text-primary-300 mt-6">3 Rings School Of Circus Arts — EIN 47-4079081 — 3256 39th Ave Sw, Seattle, WA 98116-3414 — <a href="mailto:admin@3ringsschoolofcircusarts.sbs" className="underline ml-1">admin@3ringsschoolofcircusarts.sbs</a></p>
         </div>
       </section>
       <Newsletter />
